@@ -4,11 +4,12 @@ def safeExtGet(prop, fallback) {
 
 buildscript {
     repositories {
-        jcenter()
+        maven { url "https://dl.google.com/dl/android/maven2/" }
         maven {
             url 'https://maven.google.com/'
             name 'Google'
         }
+        jcenter()
     }
 
     dependencies {
